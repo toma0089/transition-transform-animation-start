@@ -35,3 +35,61 @@
 	background-color: #e89380;
 	/*purple*/
 }
+.transition .b1{
+	transition: width 1000ms ease-in-out;
+}
+.transition .b1:hover{
+	width: 400px;
+	height: 150px;
+}
+.transition .b2{
+	transition: width 1s, height .5s;
+	transition-delay: .5s;
+}
+.transition .b2:hover{
+	width: 250px;
+	height: 250px;
+}
+.transition .b3{
+ transform:rotate(20deg) 2s cubic-bezier(.17,.67,.96,.33) .5s;
+}
+.tansition .b3:hover{
+ transform: rotate(30deg);
+}
+.transition .b4{
+	transform: all 1s ease-in-out .5s;
+}
+.transition .b4:hover{
+	transform: rotate(320deg);
+	border-radius: 50%;
+	background-color: #9696ff;
+}
+/* 
+  Transform */
+  .transform .box{
+	transition: transform .5s;
+  }
+
+.transform .b1{
+	transform: rotate(60deg);
+	transform-origin: bottom right;
+}
+.transform .b1:hover{
+	transform: rotate(0deg);
+}
+.transform .b2:hover{
+	transform: translate(20px, 20px);
+}
+.transform .b3:hover{
+	transform: rotate(60deg);
+	transform-origin: top right bottom;
+}
+.transform .b3:hover{
+	transform: scale(1.5);
+}
+.transform .b4{
+	transform: skewX(15deg) translateX(30px);
+}
+.transform .b4:hover{
+	transform: skewX(0);
+}
